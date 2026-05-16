@@ -1,0 +1,6 @@
+# Get your free API key at: https://fdc.nal.usda.gov/api-guide.html
+# Free tier: 1000 requests/hour
+USDA_API_KEY=DEMO_KEY
+
+# Set to your production URL for Vercel
+NEXT_PUBLIC_APP_URL=http://localhost:3000
