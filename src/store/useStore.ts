@@ -55,8 +55,12 @@ interface AppState {
   init: () => Promise<void>;
 }
 
-const emptyMeals = (): DayLog["meals"] =>
-  Object.fromEntries(MEAL_TYPES.map((m) => [m, []])) as DayLog["meals"];
+const emptyMeals = (): DayLog["meals"] => ({
+  Breakfast: [],
+  Lunch: [],
+  Dinner: [],
+  Snacks: [],
+});
 
 export const useStore = create<AppState>((set, get) => ({
   activeTab: "dashboard",

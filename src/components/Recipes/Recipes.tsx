@@ -104,10 +104,20 @@ function RecipeCreator({ onSave, onBack }: { onSave: (r: Recipe) => void; onBack
     setAdding(false); setQ(""); setResults([]);
   };
 
-  const draftTotals = useMemo(
-    () => sumFoods(ingredients.map((i) => ({ ...i, logId: i.id, source: "usda" as const }))),
-    [ingredients]
-  );
+const draftTotals = useMemo(
+  () =>
+    sumFoods(
+      ingredients.map((i) => ({
+        ...i,
+        logId: i.id,
+        source: "usda" as const,
+        fdcId: i.fdcId ?? 0,
+        servingSize: 1,
+        servingSizeUnit: "serving",
+      }))
+    ),
+  [ingredients]
+);
 
   const save = () => {
     if (!name.trim() || ingredients.length === 0) return;
