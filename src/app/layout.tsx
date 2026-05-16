@@ -2,13 +2,13 @@ import type { Metadata, Viewport } from "next";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "NutriTrack — Personal Nutrition Tracker",
+  title: "Nutriyn — Personal Nutrition Tracker",
   description: "Accurate macro & micronutrient tracking, meal logging, and recipe management. Works offline.",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "NutriTrack",
+    title: "Nutriyn",
   },
   other: {
     "mobile-web-app-capable": "yes",

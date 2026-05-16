@@ -130,7 +130,7 @@ export default function Settings() {
 
       {/* App info footer */}
       <div style={{ textAlign: "center", padding: "20px 0 10px", color: "var(--text-tertiary)", fontSize: 12 }}>
-        <div>NutriTrack v0.1.0 · Data stored locally on device</div>
+        <div>Nutriyn v0.1.0 · Data stored locally on device</div>
         <div style={{ marginTop: 4 }}>USDA FoodData Central · No account required</div>
       </div>
     </div>
